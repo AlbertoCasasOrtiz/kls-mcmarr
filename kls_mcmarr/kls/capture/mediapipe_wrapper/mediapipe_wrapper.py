@@ -70,7 +70,7 @@ class RecordWithMediapipe(Thread):
 
         # Select capture mode.
         if self.capture_mode == "camera" and self.capture_device is None:
-            self.capture_device = cv2.VideoCapture(self.camera_num, cv2.CAP_MSMF)
+            self.capture_device = cv2.VideoCapture(self.camera_num, cv2.CAP_DSHOW)
         elif self.capture_mode == "video" and self.capture_device is None:
             self.capture_device = cv2.VideoCapture(self.input_video_path)
 
