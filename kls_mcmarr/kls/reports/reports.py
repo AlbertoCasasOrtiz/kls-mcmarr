@@ -24,13 +24,14 @@ class Reports(_Reports):
                 generated_report_string += _("no-errors") + "\n"
             generated_report_string += "\n"
 
-        generated_report_string += "Score: " + str(((89 - score) * 100) / 89) + "%"  # 89 is max possible score.
+        score = ((89 - score) * 100) / 89
+        generated_report_string += "Score: " + str(score) + "%"  # 89 is max possible score.
 
         file = open(output_path + "Report.txt", 'w')
         file.write(generated_report_string)
         file.close()
 
-        return generated_report_string
+        return generated_report_string, score
 
     def deliver_reports(self, generated_reports):
         pass
