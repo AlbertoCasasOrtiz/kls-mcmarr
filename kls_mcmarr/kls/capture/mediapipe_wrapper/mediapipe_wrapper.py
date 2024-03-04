@@ -71,22 +71,23 @@ class RecordWithMediapipe(Thread):
         # Select capture mode.
         if self.capture_mode == "camera" and self.capture_device is None:
             self.capture_device = cv2.VideoCapture(self.camera_num, cv2.CAP_DSHOW)
+            fps = 15
         elif self.capture_mode == "video" and self.capture_device is None:
             self.capture_device = cv2.VideoCapture(self.input_video_path)
+            fps = int(self.capture_device.get(cv2.CAP_PROP_FPS))
 
         # Get width and height of camera captured images.
-        frame_width = int(self.capture_device.get(3))
-        frame_height = int(self.capture_device.get(4))
-
+        frame_width = int(self.capture_device.get(cv2.CAP_PROP_FRAME_WIDTH))
+        frame_height = int(self.capture_device.get(cv2.CAP_PROP_FRAME_HEIGHT))
         size = (frame_width, frame_height)
 
         GlobalValues.frame_width = frame_width
         GlobalValues.frame_height = frame_height
 
         # Create a video writer to write all the frames here.
-        self.raw_captured_video = cv2.VideoWriter(self.output_path + self.uuid_name + "_raw.mp4", cv2.VideoWriter_fourcc(*'mp4v'), self.capture_device.get(cv2.CAP_PROP_FPS), size)
+        self.raw_captured_video = cv2.VideoWriter(self.output_path + self.uuid_name + "_raw.mp4", cv2.VideoWriter_fourcc(*'MJPG'), fps, size)
 
-        self.processed_captured_video = cv2.VideoWriter(self.output_path + self.uuid_name + "_processed.mp4", cv2.VideoWriter_fourcc(*'mp4v'), self.capture_device.get(cv2.CAP_PROP_FPS), size)
+        self.processed_captured_video = cv2.VideoWriter(self.output_path + self.uuid_name + "_processed.mp4", cv2.VideoWriter_fourcc(*'MJPG'), fps, size)
 
         # We don't want to stop camera.
         self.stop_capture = False
