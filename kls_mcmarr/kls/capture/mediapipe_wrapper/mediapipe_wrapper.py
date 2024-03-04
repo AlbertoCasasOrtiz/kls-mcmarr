@@ -84,9 +84,9 @@ class RecordWithMediapipe(Thread):
         GlobalValues.frame_height = frame_height
 
         # Create a video writer to write all the frames here.
-        self.raw_captured_video = cv2.VideoWriter(self.output_path + self.uuid_name + "_raw.avi", cv2.VideoWriter_fourcc(*'MJPG'), self.capture_device.get(cv2.CAP_PROP_FPS), size)
+        self.raw_captured_video = cv2.VideoWriter(self.output_path + self.uuid_name + "_raw.mp4", cv2.VideoWriter_fourcc(*'mp4v'), self.capture_device.get(cv2.CAP_PROP_FPS), size)
 
-        self.processed_captured_video = cv2.VideoWriter(self.output_path + self.uuid_name + "_processed.avi", cv2.VideoWriter_fourcc(*'MJPG'), self.capture_device.get(cv2.CAP_PROP_FPS), size)
+        self.processed_captured_video = cv2.VideoWriter(self.output_path + self.uuid_name + "_processed.mp4", cv2.VideoWriter_fourcc(*'mp4v'), self.capture_device.get(cv2.CAP_PROP_FPS), size)
 
         # We don't want to stop camera.
         self.stop_capture = False
