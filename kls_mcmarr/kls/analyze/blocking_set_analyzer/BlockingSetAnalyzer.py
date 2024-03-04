@@ -49,7 +49,7 @@ class BlockingSetAnalyzer:
                 elif expected_movement.get_name() == "Inner Block" or expected_movement.get_name() == "Bloqueo Hacia Adentro":
                     analyzer = InnerBlockAnalyzer(modeled_movement, expected_movement.get_name())
                     analyzer.apply_rules()
-                elif expected_movement.get_name() == "Outer Extended Block" or expected_movement.get_name() == "Bloque Hacia Afuera Extendido":
+                elif expected_movement.get_name() == "Outer Extended Block" or expected_movement.get_name() == "Bloqueo Hacia Afuera Extendido":
                     analyzer = OuterExtendedBlockAnalyzer(modeled_movement, expected_movement.get_name())
                     analyzer.apply_rules()
                 elif expected_movement.get_name() == "Downward Outward Block" or expected_movement.get_name() == "Bloqueo Hacia Abajo Hacia Fuera":
