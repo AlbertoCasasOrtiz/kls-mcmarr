@@ -29,11 +29,11 @@ class Model(_Model):
 
         if self.generate_plots:
             # TODO: Hardcoded landmark value.
-            self.print_scatter_plot("RIGHT_WRIST", removed_nans, (0, len(captured_movement)-1), uuid_name)
+            self.print_scatter_plot("RIGHT_WRIST", removed_nans, (0, len(captured_movement)-1), uuid_name, False)
 
         return removed_nans
 
-    def print_scatter_plot(self, landmark_name, dataframe_results, interval, uuid_name):
+    def print_scatter_plot(self, landmark_name, dataframe_results, interval, uuid_name, show_plot):
         if landmark_name + "_x" in dataframe_results and landmark_name + "_y" in dataframe_results:
             # Assuming you have a dataframe named 'df' with columns 'x' and 'y'
             x = dataframe_results[landmark_name + "_x"][interval[0]:interval[1]]
@@ -76,7 +76,10 @@ class Model(_Model):
             plt.savefig(self.output_path + uuid_name + ".png", dpi=1200, bbox_inches='tight')
 
             # Display the plot
-            plt.show()
+            if show_plot:
+                plt.show()
+
+            # Close plot.
             plt.close()
 
     def remove_nans(self, df):
