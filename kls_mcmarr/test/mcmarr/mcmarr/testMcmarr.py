@@ -9,6 +9,7 @@ from kls_mcmarr.kls.model.model import Model
 from kls_mcmarr.kls.reports.reports import Reports
 from kls_mcmarr.kls.response.response import Response
 from kls_mcmarr.mcmarr.movement.SetOfMovements import SetOfMovements
+from kls_mcmarr.kls.cognitive.Cognitive import Cognitive
 
 
 class TestMCMARR(unittest.TestCase):
@@ -49,7 +50,9 @@ class TestMCMARR(unittest.TestCase):
             'set_of_movements': SetOfMovements.from_json(self.json_string_set).to_dict(),
             'current_movement': 1,
             'num_iter': 0,
-            'continue_session': True
+            'continue_session': True,
+            'current_question': 0,
+            'wrong_questions': []
         }
         mcmarr = KLS.from_dict(data)
 
@@ -78,6 +81,7 @@ class TestMCMARR(unittest.TestCase):
         analyze = Analyze(output_path="assets/output/capture/" + username + "/")
         response = Response()
         reports = Reports()
+        cognitive = Cognitive()
 
         self.mcmarr.current_movement = 0
 
@@ -86,7 +90,8 @@ class TestMCMARR(unittest.TestCase):
                                                  model=model,
                                                  analyze=analyze,
                                                  response=response,
-                                                 reports=reports)
+                                                 reports=reports,
+                                                 cognitive=cognitive)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -117,9 +122,10 @@ class TestMCMARR(unittest.TestCase):
         analyze = Analyze(output_path="assets/output/capture/")
         response = Response()
         reports = Reports()
+        cognitive = Cognitive()
 
         self.mcmarr.assign_phase_implementations(
-            indications, capture, model, analyze, response, reports)
+            indications, capture, model, analyze, response, reports, cognitive)
 
         self.assertEqual(self.mcmarr.indications, indications)
         self.assertEqual(self.mcmarr.capture, capture)

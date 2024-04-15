@@ -65,7 +65,7 @@ class XmlSetLoader:
                     # Add this error to the movement.
                     movement.movement_errors.append(movement_error)
 
-            # Append the movement to the st
+            # Append the movement to the set.
             set_of_movements.movements.append(movement)
 
         # Return loaded set.

@@ -24,10 +24,14 @@ class MCMARR(ABC):
         self.analyze = None
         self.response = None
         self.reports = None
+        self.cognitive = None
 
         self.set_of_movements = None
         self.current_movement = -1
         self.num_iter = 0
+
+        self.current_question = 0
+        self.wrong_questions = []
 
         self.continue_session = True
 
@@ -41,6 +45,8 @@ class MCMARR(ABC):
         mcmarr.current_movement = data['current_movement']
         mcmarr.num_iter = data['num_iter']
         mcmarr.continue_session = data['continue_session']
+        mcmarr.current_question = data['current_question']
+        mcmarr.wrong_questions = data['wrong_questions']
         if 'compiled_errors' in data:
             mcmarr.compiled_errors = data['compiled_errors']
         if 'set_of_movements' in data:
@@ -57,7 +63,9 @@ class MCMARR(ABC):
         dict_mcmarr = {
             'current_movement': self.current_movement,
             'num_iter': self.num_iter,
-            'continue_session': self.continue_session
+            'continue_session': self.continue_session,
+            'current_question': self.current_question,
+            'wrong_questions': self.wrong_questions
         }
         if self.compiled_errors:
             dict_mcmarr['compiled_errors'] = self.compiled_errors
@@ -134,7 +142,7 @@ class MCMARR(ABC):
             self.num_iter = self.num_iter + 1
 
         # Generate reports at the end and deliver them.
-        generated_reports = self.reports.generate_reports(output_path + session_folder_name + "/", user_uuid, self.compiled_errors)
+        generated_reports = self.reports.generate_reports(output_path + session_folder_name + "/", user_uuid, self.compiled_errors, self.wrong_questions)
         self.reports.deliver_reports(generated_reports)
 
     @abstractmethod
@@ -145,13 +153,14 @@ class MCMARR(ABC):
     def condition_finish_session(self):
         return self.not_testing and self.continue_session and (self.current_movement < len(self.set_of_movements.get_movements()))
 
-    def assign_phase_implementations(self, indications, capture, model, analyze, response, reports):
+    def assign_phase_implementations(self, indications, capture, model, analyze, response, reports, cognitive):
         self.indications = indications
         self.capture = capture
         self.model = model
         self.analyze = analyze
         self.response = response
         self.reports = reports
+        self.cognitive = cognitive
 
     def load_set_of_movements(self, path=None, string=None):
         loader = XmlSetLoader(path=path, string=string)

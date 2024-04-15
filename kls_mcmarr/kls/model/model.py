@@ -35,6 +35,12 @@ class Model(_Model):
 
     def print_scatter_plot(self, landmark_name, dataframe_results, interval, uuid_name, show_plot):
         if landmark_name + "_x" in dataframe_results and landmark_name + "_y" in dataframe_results:
+            # Enable/disable interactive plots
+            if not show_plot:
+                plt.ioff()
+            else:
+                plt.ion()
+
             # Assuming you have a dataframe named 'df' with columns 'x' and 'y'
             x = dataframe_results[landmark_name + "_x"][interval[0]:interval[1]]
             y = dataframe_results[landmark_name + "_y"][interval[0]:interval[1]]
