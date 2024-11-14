@@ -1,0 +1,2 @@
+recursive-include kls_mcmarr *.mo
+recursive-include kls_mcmarr *.tflite

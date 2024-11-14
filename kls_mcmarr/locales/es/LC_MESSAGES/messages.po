@@ -1,0 +1,675 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-11-09 12:45-0800\n"
+"PO-Revision-Date: 2024-02-21 18:18-0800\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/BlockingSetAnalyzer.py:41
+msgid "required-body-parts-not-detected"
+msgstr "Alguna de las partes del cuerpo requeridas no se detectó"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:60
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:80
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:84
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:88
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:69
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:73
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:79
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:46
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:70
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:74
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:78
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:82
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:39
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:43
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:47
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:79
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:84
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:88
+msgid "initial-position"
+msgstr "Posición inicial"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:60
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:46
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:58
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:61
+msgid "stage-not-finished"
+msgstr "%(stage_name)s no terminó"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:60
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:46
+msgid "body-part-never-moved-pos"
+msgstr "El/la %(body_part)s nunca se movió hacia la posición %(pos)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:60
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:80
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:84
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:88
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:139
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:149
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:210
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:214
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:248
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:252
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:256
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:69
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:73
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:115
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:123
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:173
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:181
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:186
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:239
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:243
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:247
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:46
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:70
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:78
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:82
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:129
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:165
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:169
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:195
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:199
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:39
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:43
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:47
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:68
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:72
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:76
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:58
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:79
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:84
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:88
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:125
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:129
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:148
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:154
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:178
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:182
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:203
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:207
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:215
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:219
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:265
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:269
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:277
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:281
+msgid "wrist"
+msgstr "muñeca"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:60
+msgid "right"
+msgstr "derecha"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:60
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:46
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:58
+msgid "ending-position-never-reached"
+msgstr "Nunca se alcanzó la posición final"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:139
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:149
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:201
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:210
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:214
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:115
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:119
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:123
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:173
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:177
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:181
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:186
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:129
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:165
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:169
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:58
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:61
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:125
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:129
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:148
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:154
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:178
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:182
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:203
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:207
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:211
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:215
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:219
+msgid "transition-name"
+msgstr "Transición %(name)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:61
+msgid "error-reaching-last-frame"
+msgstr "Hubo un error al intentar llegar al último fotograma"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:80
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:84
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:88
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:69
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:73
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:123
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:181
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:239
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:243
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:247
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:70
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:165
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:169
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:195
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:199
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:68
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:79
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:84
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:154
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:182
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:203
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:207
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:265
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:269
+msgid "body-part-not-pos-reference"
+msgstr ""
+"El/la %(body_part)s no está a la posición %(pos)s de el/la %(reference)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:80
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:69
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:123
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:181
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:239
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:70
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:165
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:195
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:79
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:182
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:203
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:207
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:265
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:269
+msgid "above"
+msgstr "encima de"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:80
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:69
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:123
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:181
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:239
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:82
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:165
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:195
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:219
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:281
+msgid "shoulder"
+msgstr "hombro"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:84
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:243
+msgid "at-left"
+msgstr "a la izquierda"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:84
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:201
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:210
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:248
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:79
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:119
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:177
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:186
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:243
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:70
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:74
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:205
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:39
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:76
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:182
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:207
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:211
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:269
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:273
+msgid "elbow"
+msgstr "codo"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:88
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:73
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:247
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:169
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:199
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:68
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:84
+msgid "below"
+msgstr "debajo de"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:88
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:73
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:247
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:169
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:199
+msgid "eyes"
+msgstr ""
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:139
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:149
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:115
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:119
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:173
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:177
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:129
+msgid "body-part-not-following-trajectory"
+msgstr ""
+"El/la %(body_part)s no está siguiendo una trayectoria %(trajectory_type)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:139
+msgid "clockwise"
+msgstr "en el sentido de las agujas del reloj"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:149
+msgid "circular"
+msgstr "circular"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:201
+msgid "body-part-not-anchored"
+msgstr "El/la %(body_part)s no está anclado al cuerpo"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:210
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:248
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:205
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:39
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:76
+msgid "body-parts-not-same-line"
+msgstr ""
+"El/la %(body_part_1)s y el/la %(body_part_2)s no están en la misma línea %"
+"(line_type)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:210
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:248
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:39
+msgid "horizontal"
+msgstr "horizontal"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:214
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:74
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:47
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:72
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:88
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:211
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:273
+msgid "body-part-far-from-reference"
+msgstr "El/la %(body_part)s está demasiado alejado de el/la %(reference)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:214
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:47
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:79
+msgid "hip"
+msgstr "cadera"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:248
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:252
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:256
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:239
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:243
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:247
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:195
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:199
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:205
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:63
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:68
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:72
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:76
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:265
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:269
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:273
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:277
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:281
+msgid "ending-position"
+msgstr "Posición final"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:252
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:256
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:43
+msgid "body-part-not-distance-body-part"
+msgstr ""
+"El/la %(body_part_1)s no está a aproximadamente la distancia de %(distance)s "
+"de el/la %(body_part_2)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:252
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:256
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:43
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:72
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:88
+msgid "body"
+msgstr "cuerpo"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:252
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/DownwardOutwardBlockAnalyzer.py:256
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:43
+msgid "one-punch"
+msgstr "un puño"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/EmptyAnalyzer.py:8
+msgid "movement-not-detected-or-defined"
+msgstr "El movimiento no se detectó o no está definido"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:49
+msgid "left"
+msgstr "izquierda"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:52
+msgid "body-part-never-surpassed-reference"
+msgstr "El/la %(body_part)s nunca sobrepasó el/la %(reference)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:79
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:186
+msgid "body-part-not-in-reference"
+msgstr "El/la %(body_part)s no está en el/la %(reference)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:79
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:205
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:129
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:154
+msgid "center-of-body"
+msgstr "centro del cuerpo"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:115
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:119
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:173
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/ExtendedOutwardBlockAnalyzer.py:177
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:129
+msgid "rectilinear"
+msgstr "rectilínea"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:46
+msgid "down-and-away-from-center-body"
+msgstr "abajo y alejado del centro del cuerpo"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:49
+msgid "body-part-never-pos-relative-to"
+msgstr ""
+"El/la %(body_part)s nunca estuvo a la posición %(pos)s de el/la %"
+"(reference_part)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:49
+msgid "horizontal-line-eyes"
+msgstr "línea horizontal de los ojos"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:49
+msgid "down"
+msgstr "abajo"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:66
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:203
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:265
+msgid "head"
+msgstr "cabeza"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:74
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:211
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:273
+msgid "ear"
+msgstr "oreja"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:78
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:215
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:277
+msgid "body-part-not-crossing-reference"
+msgstr "El/la %(body_part)s no está cruzando el/la %(reference)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:78
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:55
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:215
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:277
+msgid "nose"
+msgstr "nariz"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:82
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:219
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:281
+msgid "body-part-beyond-reference"
+msgstr "El/la %(body_part)s está mas alla de el/la %(reference)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/HammeringInwardBlockAnalyzer.py:205
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:76
+msgid "vertical"
+msgstr "vertical"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/RearElbowBlockAnalyzer.py:68
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:84
+msgid "solar-plexus"
+msgstr "plexo solar"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:52
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:55
+msgid "body-part-never-pos-reference"
+msgstr ""
+"El/la %(body_part)s nunca fue a la posición %(pos)s de el/la %(reference)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:49
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:154
+msgid "inside"
+msgstr "dentro"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:52
+msgid "plexus"
+msgstr "plexo"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:58
+msgid "body-part-never-stopped-going-pos"
+msgstr "El/la %(body_part)s nunca paró de ir hacia la posición %(pos)s"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:58
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:125
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:148
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:178
+msgid "up"
+msgstr "arriba"
+
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:125
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:129
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:148
+#: kls_mcmarr/kls/analyze/blocking_set_analyzer/UpwardBlockAnalyzer.py:178
+msgid "body-part-not-going-pos"
+msgstr "El/la %(body_part)s no está yendo hacia la posición %(pos)s"
+
+#: kls_mcmarr/kls/indications/indications.py:15
+msgid "please-execute-movement"
+msgstr "Por favor, ejecuta el movimiento %(movement)s"
+
+#: kls_mcmarr/kls/reports/reports.py:40 kls_mcmarr/kls/reports/reports.py:276
+msgid "psychomotor_module"
+msgstr "Módulo Psicomotor"
+
+#: kls_mcmarr/kls/reports/reports.py:56
+msgid "iteration"
+msgstr "Iteración"
+
+#: kls_mcmarr/kls/reports/reports.py:57
+msgid "movement_name"
+msgstr "Nombre del Movimiento"
+
+#: kls_mcmarr/kls/reports/reports.py:67
+msgid "errors"
+msgstr "Errores"
+
+#: kls_mcmarr/kls/reports/reports.py:69
+msgid "priority"
+msgstr "Prioridad"
+
+#: kls_mcmarr/kls/reports/reports.py:72
+msgid "no-errors"
+msgstr "Sin errores"
+
+#: kls_mcmarr/kls/reports/reports.py:93 kls_mcmarr/kls/reports/reports.py:283
+msgid "cognitive_module"
+msgstr "Módulo Cognitivo"
+
+#: kls_mcmarr/kls/reports/reports.py:119 kls_mcmarr/kls/reports/reports.py:290
+msgid "affective_module"
+msgstr "Módulo Afectivo"
+
+#: kls_mcmarr/kls/reports/reports.py:128
+msgid "affective_main_emotion"
+msgstr "Emocion Principal"
+
+#: kls_mcmarr/kls/response/response.py:189
+msgid "commited-mild-medium-errors"
+msgstr ""
+"Has cometido %(num_mild)s errores leves y %(num_medium)s errores moderados"
+
+#: kls_mcmarr/kls/response/response.py:189
+#: kls_mcmarr/kls/response/response.py:191
+#: kls_mcmarr/kls/response/response.py:193
+#: kls_mcmarr/kls/response/response.py:195
+msgid "lets-continue"
+msgstr "Continuemos"
+
+#: kls_mcmarr/kls/response/response.py:191
+msgid "commited-mild-errors"
+msgstr "Has cometido %(num_mild)s errores leves"
+
+#: kls_mcmarr/kls/response/response.py:193
+msgid "commited-medium-errors"
+msgstr "Has cometido %(num_medium)s errores moderados"
+
+#: kls_mcmarr/kls/response/response.py:195
+msgid "commited-errors"
+msgstr "Has cometido %(num_errors)s errores"
+
+#: kls_mcmarr/kls/response/response.py:211
+msgid "b1e1"
+msgstr "Al comenzar el movimiento, tu puño debe moverse hacia el centro de tu cuerpo."
+
+#: kls_mcmarr/kls/response/response.py:213
+msgid "b1e2"
+msgstr "Tu puño debe subir por el centro del cuerpo, hasta llegar encima de tu cabeza."
+
+#: kls_mcmarr/kls/response/response.py:215
+msgid "b1e3"
+msgstr "Cuando tu brazo esté cubriendo tu cabeza, tiene que mantenerse en esa posición."
+
+#: kls_mcmarr/kls/response/response.py:217
+msgid "b1e4"
+msgstr "Tu puño debe subir por el centro de tu cuerpo."
+
+#: kls_mcmarr/kls/response/response.py:219
+msgid "b1e5"
+msgstr "Debes cubrir bien tu cabeza. En la posición final, mueve tu puño más hacia tu izquierda."
+
+#: kls_mcmarr/kls/response/response.py:221
+msgid "b2e1"
+msgstr "Tu puño debe dirigirse hacia tu hombro izquierdo."
+
+#: kls_mcmarr/kls/response/response.py:223
+msgid "b2e2"
+msgstr "Tu puño debe terminar por debajo de la horizontal de tus ojos."
+
+#: kls_mcmarr/kls/response/response.py:225
+msgid "b2e3"
+msgstr "Tu puño debe moverse en línea recta hacia tu hombro."
+
+#: kls_mcmarr/kls/response/response.py:227
+msgid "b3e1"
+msgstr "Debes mover el puño hacia tu derecha en línea recta."
+
+#: kls_mcmarr/kls/response/response.py:229
+msgid "b3e2"
+msgstr "Debes mover tu puño más hacia la derecha."
+
+#: kls_mcmarr/kls/response/response.py:231
+msgid "b3e3"
+msgstr "Tu puño debe moverse en línea recta."
+
+#: kls_mcmarr/kls/response/response.py:233
+msgid "b4e1"
+msgstr "Al inicio del movimiento, tu puño debe dirigirse hacia el centro del cuerpo."
+
+#: kls_mcmarr/kls/response/response.py:235
+msgid "b4e2"
+msgstr "Cuando tu puño llegue abajo, debe estar alineado con el codo."
+
+#: kls_mcmarr/kls/response/response.py:237
+msgid "b4e3"
+msgstr "Tu puño debe moverse siguiendo un círculo en el sentido contrario a las agujas del reloj."
+
+#~ msgid "arm"
+#~ msgstr "brazo"
+
+#~ msgid "body-part-not-at-angle"
+#~ msgstr ""
+#~ "El/la %(body_part)s no está formando un ángulo de aproximadamente %(angle)"
+#~ "s grados"
+
+#~ msgid "severe-error"
+#~ msgstr "Parece que has cometido un error importante"
+
+#~ msgid "repeat-movement"
+#~ msgstr "Por favor, repite el movimiento"
+
+#~ msgid "wrist-not-between-horizontal-eyes-mouth"
+#~ msgstr "La muñeca no está entre las horizontales de los ojos y la boca"
+
+#~ msgid "away-from-center-body"
+#~ msgstr "lejos del centro del cuerpo"

@@ -1,0 +1,10 @@
+setuptools~=65.5.1
+matplotlib~=3.7.2
+numpy~=1.26.4
+scipy~=1.11.1
+pandas~=2.0.3
+opencv-python~=4.8.0.76
+mediapipe~=0.10.11
+pyttsx3~=2.90
+tensorflow~=2.17.0
+pylint
