@@ -7,7 +7,7 @@ Implementation of KLS processing pipeline following MCMARR framework. Includes a
 Execute the following command to install the package using pip:
 
 ```bash
-pip install git+https://github.com/AlbertoCasasOrtiz/kls_mcmarr
+pip install git+https://github.com/AlbertoCasasOrtiz/kls-mcmarr
 ```
 
 # Voices
