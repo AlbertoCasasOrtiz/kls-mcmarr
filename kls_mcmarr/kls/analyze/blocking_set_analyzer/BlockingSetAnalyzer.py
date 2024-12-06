@@ -43,13 +43,13 @@ class BlockingSetAnalyzer:
         else:
             # If we expect a movement, check its name and process it.
             if expected_movement is not None:
-                if expected_movement.get_name() == "Upper Block" or expected_movement.get_name() == "Bloqueo Hacia Arriba":
+                if expected_movement.get_name() == "Upward Block" or expected_movement.get_name() == "Bloqueo Hacia Arriba":
                     analyzer = UpwardBlockAnalyzer(modeled_movement, expected_movement.get_name(), 0, False, video_path=output_path + uuid_name + "_raw.webm", output_path=output_path + uuid_name)
                     analyzer.apply_rules()
-                elif expected_movement.get_name() == "Inner Block" or expected_movement.get_name() == "Bloqueo Hacia Adentro":
+                elif expected_movement.get_name() == "Hammering Inward Block" or expected_movement.get_name() == "Bloqueo Hacia Adentro":
                     analyzer = HammeringInwardBlockAnalyzer(modeled_movement, expected_movement.get_name(), 0, False, video_path=output_path + uuid_name + "_raw.webm", output_path=output_path + uuid_name)
                     analyzer.apply_rules()
-                elif expected_movement.get_name() == "Outer Extended Block" or expected_movement.get_name() == "Bloqueo Hacia Afuera Extendido":
+                elif expected_movement.get_name() == "Extended Outward Block" or expected_movement.get_name() == "Bloqueo Hacia Afuera Extendido":
                     analyzer = ExtendedOutwardBlockAnalyzer(modeled_movement, expected_movement.get_name(), 0, False, video_path=output_path + uuid_name + "_raw.webm", output_path=output_path + uuid_name)
                     analyzer.apply_rules()
                 elif expected_movement.get_name() == "Downward Outward Block" or expected_movement.get_name() == "Bloqueo Hacia Abajo Hacia Fuera":

@@ -5,7 +5,7 @@ class EmptyAnalyzer(_MovementAnalyzer):
 
     def __init__(self, modeled_movement=None, movement_name="", pos=0):
         super().__init__(modeled_movement, movement_name, pos)
-        self.errors.append([_("movement-not-detected-or-defined") + ".", 3])
+        self.errors.append([_("movement-not-detected-or-defined") + ".", 3, None])
 
     def apply_rules(self):
         return self.finished_analysis, self.errors
