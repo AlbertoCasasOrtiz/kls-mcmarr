@@ -29,8 +29,8 @@ class KLS(MCMARR):
     def condition_finish_session(self):
         return super().condition_finish_session()
 
-    def assign_phase_implementations(self, indications, capture, model, analyze, response, reports, cognitive):
-        super().assign_phase_implementations(indications, capture, model, analyze, response, reports, cognitive)
+    def assign_phase_implementations(self, indications, capture, model, analyze, response, reports, cognitive, metareports):
+        super().assign_phase_implementations(indications, capture, model, analyze, response, reports, cognitive, metareports)
 
     def load_set_of_movements(self, path=None, string=None):
         super().load_set_of_movements(path, string)

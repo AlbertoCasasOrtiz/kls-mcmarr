@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-11-09 12:45-0800\n"
+"POT-Creation-Date: 2024-11-18 16:51-0800\n"
 "PO-Revision-Date: 2024-02-21 18:18-0800\n"
 "Last-Translator: <EMAIL@ADDRESS>\n"
 "Language-Team: Spanish\n"
@@ -574,85 +574,110 @@ msgstr "Módulo Afectivo"
 msgid "affective_main_emotion"
 msgstr "Emocion Principal"
 
-#: kls_mcmarr/kls/response/response.py:189
+#: kls_mcmarr/kls/response/response.py:147
+#: kls_mcmarr/kls/response/response.py:157
+msgid "wrong_but_not_repeat"
+msgstr "Parece que aún ha habido un error, ¡pero no pasa nada! Vamos a continuar y a seguir mejorando."
+
+#: kls_mcmarr/kls/response/response.py:174
+#: kls_mcmarr/kls/response/response.py:182
+msgid "severe-error"
+msgstr "Parece que has cometido un error importante"
+
+#: kls_mcmarr/kls/response/response.py:174
+#: kls_mcmarr/kls/response/response.py:182
+msgid "repeat-movement"
+msgstr "Por favor, repite el movimiento"
+
+#: kls_mcmarr/kls/response/response.py:198
 msgid "commited-mild-medium-errors"
 msgstr ""
 "Has cometido %(num_mild)s errores leves y %(num_medium)s errores moderados"
 
-#: kls_mcmarr/kls/response/response.py:189
-#: kls_mcmarr/kls/response/response.py:191
-#: kls_mcmarr/kls/response/response.py:193
-#: kls_mcmarr/kls/response/response.py:195
+#: kls_mcmarr/kls/response/response.py:199
+#: kls_mcmarr/kls/response/response.py:202
+#: kls_mcmarr/kls/response/response.py:205
+#: kls_mcmarr/kls/response/response.py:208
 msgid "lets-continue"
 msgstr "Continuemos"
 
-#: kls_mcmarr/kls/response/response.py:191
+#: kls_mcmarr/kls/response/response.py:201
 msgid "commited-mild-errors"
 msgstr "Has cometido %(num_mild)s errores leves"
 
-#: kls_mcmarr/kls/response/response.py:193
+#: kls_mcmarr/kls/response/response.py:204
 msgid "commited-medium-errors"
 msgstr "Has cometido %(num_medium)s errores moderados"
 
-#: kls_mcmarr/kls/response/response.py:195
+#: kls_mcmarr/kls/response/response.py:207
 msgid "commited-errors"
 msgstr "Has cometido %(num_errors)s errores"
 
-#: kls_mcmarr/kls/response/response.py:211
+#: kls_mcmarr/kls/response/response.py:226
 msgid "b1e1"
-msgstr "Al comenzar el movimiento, tu puño debe moverse hacia el centro de tu cuerpo."
+msgstr ""
+"Al comenzar el movimiento, tu puño debe moverse hacia el centro de tu cuerpo."
 
-#: kls_mcmarr/kls/response/response.py:213
+#: kls_mcmarr/kls/response/response.py:228
 msgid "b1e2"
-msgstr "Tu puño debe subir por el centro del cuerpo, hasta llegar encima de tu cabeza."
+msgstr ""
+"Tu puño debe subir por el centro del cuerpo, hasta llegar encima de tu "
+"cabeza."
 
-#: kls_mcmarr/kls/response/response.py:215
+#: kls_mcmarr/kls/response/response.py:230
 msgid "b1e3"
-msgstr "Cuando tu brazo esté cubriendo tu cabeza, tiene que mantenerse en esa posición."
+msgstr ""
+"Cuando tu brazo esté cubriendo tu cabeza, tiene que mantenerse en esa "
+"posición."
 
-#: kls_mcmarr/kls/response/response.py:217
+#: kls_mcmarr/kls/response/response.py:232
 msgid "b1e4"
 msgstr "Tu puño debe subir por el centro de tu cuerpo."
 
-#: kls_mcmarr/kls/response/response.py:219
+#: kls_mcmarr/kls/response/response.py:234
 msgid "b1e5"
-msgstr "Debes cubrir bien tu cabeza. En la posición final, mueve tu puño más hacia tu izquierda."
+msgstr ""
+"Debes cubrir bien tu cabeza. En la posición final, mueve tu puño más hacia "
+"tu izquierda."
 
-#: kls_mcmarr/kls/response/response.py:221
+#: kls_mcmarr/kls/response/response.py:236
 msgid "b2e1"
 msgstr "Tu puño debe dirigirse hacia tu hombro izquierdo."
 
-#: kls_mcmarr/kls/response/response.py:223
+#: kls_mcmarr/kls/response/response.py:238
 msgid "b2e2"
 msgstr "Tu puño debe terminar por debajo de la horizontal de tus ojos."
 
-#: kls_mcmarr/kls/response/response.py:225
+#: kls_mcmarr/kls/response/response.py:240
 msgid "b2e3"
 msgstr "Tu puño debe moverse en línea recta hacia tu hombro."
 
-#: kls_mcmarr/kls/response/response.py:227
+#: kls_mcmarr/kls/response/response.py:242
 msgid "b3e1"
 msgstr "Debes mover el puño hacia tu derecha en línea recta."
 
-#: kls_mcmarr/kls/response/response.py:229
+#: kls_mcmarr/kls/response/response.py:244
 msgid "b3e2"
 msgstr "Debes mover tu puño más hacia la derecha."
 
-#: kls_mcmarr/kls/response/response.py:231
+#: kls_mcmarr/kls/response/response.py:246
 msgid "b3e3"
 msgstr "Tu puño debe moverse en línea recta."
 
-#: kls_mcmarr/kls/response/response.py:233
+#: kls_mcmarr/kls/response/response.py:248
 msgid "b4e1"
-msgstr "Al inicio del movimiento, tu puño debe dirigirse hacia el centro del cuerpo."
+msgstr ""
+"Al inicio del movimiento, tu puño debe dirigirse hacia el centro del cuerpo."
 
-#: kls_mcmarr/kls/response/response.py:235
+#: kls_mcmarr/kls/response/response.py:250
 msgid "b4e2"
 msgstr "Cuando tu puño llegue abajo, debe estar alineado con el codo."
 
-#: kls_mcmarr/kls/response/response.py:237
+#: kls_mcmarr/kls/response/response.py:252
 msgid "b4e3"
-msgstr "Tu puño debe moverse siguiendo un círculo en el sentido contrario a las agujas del reloj."
+msgstr ""
+"Tu puño debe moverse siguiendo un círculo en el sentido contrario a las "
+"agujas del reloj."
 
 #~ msgid "arm"
 #~ msgstr "brazo"
@@ -661,12 +686,6 @@ msgstr "Tu puño debe moverse siguiendo un círculo en el sentido contrario a la
 #~ msgstr ""
 #~ "El/la %(body_part)s no está formando un ángulo de aproximadamente %(angle)"
 #~ "s grados"
-
-#~ msgid "severe-error"
-#~ msgstr "Parece que has cometido un error importante"
-
-#~ msgid "repeat-movement"
-#~ msgstr "Por favor, repite el movimiento"
 
 #~ msgid "wrist-not-between-horizontal-eyes-mouth"
 #~ msgstr "La muñeca no está entre las horizontales de los ojos y la boca"

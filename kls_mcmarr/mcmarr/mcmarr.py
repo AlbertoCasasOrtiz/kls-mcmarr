@@ -24,6 +24,7 @@ class MCMARR(ABC):
         self.analyze = None
         self.response = None
         self.reports = None
+        self.metareports = None
         self.cognitive = None
 
         self.set_of_movements = None
@@ -141,7 +142,7 @@ class MCMARR(ABC):
             self.compiled_errors.append([self.num_iter, expected_movement.get_name(), analyzed_movement_errors])
 
             # Update next movement.
-            if is_correct:
+            if is_correct or not self.should_repeat_movement():
                 self.current_movement = self.current_movement + 1
                 self.num_reps = 1
             else:
@@ -159,6 +160,9 @@ class MCMARR(ABC):
         generated_reports = self.reports.generate_summary_report(output_path + session_folder_name + "/", user_uuid, self.compiled_errors, self.answers, True)
         self.reports.deliver_reports(generated_reports)
 
+        # Generate metareport.
+        self.metareports.generate_meta_reports(output_path)
+
     @abstractmethod
     def stop_mcmarr_session(self):
         self.continue_session = True
@@ -167,7 +171,7 @@ class MCMARR(ABC):
     def condition_finish_session(self):
         return self.not_testing and self.continue_session and (self.current_movement < len(self.set_of_movements.get_movements()))
 
-    def assign_phase_implementations(self, indications, capture, model, analyze, response, reports, cognitive):
+    def assign_phase_implementations(self, indications, capture, model, analyze, response, reports, cognitive, metareports):
         self.indications = indications
         self.capture = capture
         self.model = model
@@ -175,6 +179,7 @@ class MCMARR(ABC):
         self.response = response
         self.reports = reports
         self.cognitive = cognitive
+        self.metareports = metareports
 
     def load_set_of_movements(self, path=None, string=None):
         loader = XmlSetLoader(path=path, string=string)

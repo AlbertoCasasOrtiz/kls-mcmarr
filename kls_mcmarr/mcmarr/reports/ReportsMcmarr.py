@@ -9,6 +9,7 @@ class ReportsMcmarr(ABC):
     def generate_reports(self, output_path, uuid_name, detected_errors, wrong_questions):
         pass
 
+    @abstractmethod
     def generate_summary_report(self, output_path, uuid_name, detected_errors, wrong_questions):
         pass
 

@@ -1,3 +1,4 @@
+import ast
 import unittest
 import os
 
@@ -10,6 +11,7 @@ from kls_mcmarr.kls.reports.reports import Reports
 from kls_mcmarr.kls.response.response import Response
 from kls_mcmarr.mcmarr.movement.SetOfMovements import SetOfMovements
 from kls_mcmarr.kls.cognitive.Cognitive import Cognitive
+from kls_mcmarr.kls.reports.metareports import MetaReports
 
 
 class TestMCMARR(unittest.TestCase):
@@ -89,6 +91,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -98,7 +101,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -127,6 +131,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -136,7 +141,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -165,6 +171,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -174,7 +181,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -203,6 +211,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -212,7 +221,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -241,6 +251,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -250,7 +261,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -279,6 +291,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -288,7 +301,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -317,6 +331,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -326,7 +341,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -355,6 +371,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -364,7 +381,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -393,6 +411,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -402,7 +421,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -431,6 +451,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -440,7 +461,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -469,6 +491,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -478,7 +501,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -507,6 +531,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -516,7 +541,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -545,6 +571,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -554,7 +581,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -583,6 +611,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -592,7 +621,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -621,6 +651,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -630,7 +661,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -659,6 +691,7 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.current_movement = 0
 
@@ -668,7 +701,8 @@ class TestMCMARR(unittest.TestCase):
                                                  analyze=analyze,
                                                  response=response,
                                                  reports=reports,
-                                                 cognitive=cognitive)
+                                                 cognitive=cognitive,
+                                                 metareports=metareports)
 
         self.mcmarr.load_set_of_movements("assets/sets/Set de Bloqueos I.xml")
 
@@ -703,9 +737,10 @@ class TestMCMARR(unittest.TestCase):
         response = Response()
         reports = Reports()
         cognitive = Cognitive()
+        metareports = MetaReports()
 
         self.mcmarr.assign_phase_implementations(
-            indications, capture, model, analyze, response, reports, cognitive)
+            indications, capture, model, analyze, response, reports, cognitive, metareports)
 
         self.assertEqual(self.mcmarr.indications, indications)
         self.assertEqual(self.mcmarr.capture, capture)
@@ -721,6 +756,59 @@ class TestMCMARR(unittest.TestCase):
 
         self.assertEqual(loaded_dict, loaded_dict)
 
+    def test_metareport(self):
+        username = "username"
+        metareport = MetaReports()
+        metareport.generate_meta_reports("assets/output/capture/" + "username" + "/")
+
+    @unittest.skip("Too long.")
+    def test_generate_report(self):
+        output_path = ''
+
+        if not output_path.endswith("/"):
+            output_path = output_path + "/"
+
+        kls = KLS()
+        kls.reports = Reports()
+
+        # Load compiled errors.
+        for filename in os.listdir(output_path):
+            if filename.endswith("-errors.txt"):
+                parts = filename.split("-")
+                iteration_number = parts[0]
+                movement_name = parts[1]
+
+                errors_list = []
+                with open(output_path + filename, 'r') as file:
+                    for line in file:
+                        # Convert each line (which is a string representation of a list) into an actual list
+                        individual_error = ast.literal_eval(
+                            line.strip())  # Use strip() to remove any extra spaces/newlines
+                        errors_list.append(individual_error)
+                kls.compiled_errors.append([iteration_number, movement_name, errors_list])
+
+        # Load wrong questions.
+        for filename in os.listdir(output_path):
+            if filename.endswith("-cognitive.txt"):
+                with open(output_path + filename, 'r') as file:
+                    for line in file:
+                        individual_error = ast.literal_eval(line.strip())
+                        correct = individual_error[0]
+                        question = individual_error[1]
+                        answer = individual_error[2]
+                        question_id = individual_error[3]
+                        kls.answers.append(
+                            {"correct": correct, "question": question, "answer": answer, "id": question_id})
+
+        generated_reports = kls.reports.generate_reports(output_path, "",
+                                                         kls.compiled_errors, kls.answers, True)
+        generated_reports = kls.reports.generate_summary_report(output_path, "",
+                                                                kls.compiled_errors, kls.answers, True)
+
+    def test_get_metareport_values(self):
+        metareport = MetaReports()
+        values = metareport.get_metareport_values("assets/output/capture/" + "username" + "/")
+        print(values)
 
 if __name__ == '__main__':
     unittest.main()

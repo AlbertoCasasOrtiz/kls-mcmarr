@@ -38,41 +38,79 @@ class Reports(_Reports):
 
         # Text Report Generation
         generated_report_string = _("psychomotor_module") + "\n"
-
         score_psychomotor = 0
         score_to_add = 0
+        per_movement_score = []
         movement_name = None
-        previous_movement_name = None
-        num_movement = 0
+        num_movement = -1
+        repeating_because_fatal = False
+        detected_medium_error = False
+
         for iteration in self.detected_errors:
-            # Update previous movement name.
             previous_movement_name = movement_name
+            iteration_number, movement_name, errors = iteration
 
-            # Extract new movement name and new iteration number.
-            iteration_number = iteration[0]
-            movement_name = iteration[1]
+            if previous_movement_name != movement_name:
+                repeating_because_fatal = False
+                detected_medium_error = False
+                num_movement += 1
 
-            # Generate strings for previous movement name and iteration number.
-            generated_report_string += _("iteration") + ": " + str(iteration_number) + "\n"
-            generated_report_string += " - " + _("movement_name") + ": " + movement_name + "\n"
+            generated_report_string += _("iteration") + f": {iteration_number}\n"
+            generated_report_string += f" - " + _("movement_name") + f": {movement_name}\n"
 
-            if previous_movement_name == movement_name:
-                # Set it to max, since here we are repeating.
-                score_to_add = self.max_score_per_movement[num_movement] * (20/self.max_score_per_movement[num_movement])
-            else:
+            if repeating_because_fatal and previous_movement_name == movement_name:
+                score_to_add = 100/len(self.max_score_per_movement)  # Max score as a percentage
+                if len(per_movement_score) <= num_movement:
+                    per_movement_score.append({movement_name: score_to_add})
+                else:
+                    per_movement_score[num_movement] = {movement_name: score_to_add}
+                continue
+
+            if not detected_medium_error:
                 score_psychomotor += score_to_add
                 score_to_add = 0
 
-                if len(iteration[2]) > 0:
-                    generated_report_string += " - " + _("errors") + ": " + "\n"
-                    for error in iteration[2]:
-                        generated_report_string += _("priority") + ": " + str(error[1]) + " - " + error[0] + "\n"
-                        score_to_add += error[1] * (20/self.max_score_per_movement[num_movement])
-                else:
-                    generated_report_string += _("no-errors") + "\n"
-                generated_report_string += "\n"
+            if errors:
+                generated_report_string += " - " + _("errors") + ":\n"
+                for error in errors:
+                    priority, description = error[1], error[0]
+                    generated_report_string += _("priority") + f": {priority} - {description}\n"
 
-                num_movement += 1
+                    if priority == 1 and not detected_medium_error:  # Mild error
+                        score_to_add += (priority * 100/len(self.max_score_per_movement)) / self.max_score_per_movement[num_movement]
+                    elif priority == 2:  # Medium error
+                        detected_medium_error = True
+                        score_to_add = 100/len(self.max_score_per_movement) / 2  # Half max score
+                    elif priority == 3:  # Fatal error
+                        repeating_because_fatal = True
+                        break
+
+                    if len(per_movement_score) <= num_movement:
+                        per_movement_score.append({movement_name: score_to_add})
+                    else:
+                        per_movement_score[num_movement] = {movement_name: score_to_add}
+            else:
+                generated_report_string += _("no-errors") + "\n"
+                if len(per_movement_score) <= num_movement:
+                    per_movement_score.append({movement_name: score_to_add})
+                else:
+                    per_movement_score[num_movement] = {movement_name: score_to_add}
+
+            generated_report_string += "\n"
+
+        # Substract 20 for each key
+        total_score_sum_movements = 0
+        for movement in per_movement_score:
+            for key in movement:  # Each dictionary has one key
+                movement[key] = 20 - movement[key]
+                total_score_sum_movements += movement[key]
+
+        # Save per_movement_score to a JSON file
+        with open(output_path + os.sep + "per_movement_score.json", "w") as file:
+            json.dump(per_movement_score, file)
+
+        print("Per movement score:", per_movement_score)
+        print("Per movement score sum:", total_score_sum_movements)
         # Add last score.
         score_psychomotor += score_to_add
 
@@ -80,6 +118,7 @@ class Reports(_Reports):
         score_psychomotor = 100-score_psychomotor
         self.score_psychomotor_final = score_psychomotor
         generated_report_string += "Score: " + str(score_psychomotor) + "%" + "\n"
+        print("Score psychomotor:", score_psychomotor)
 
         # Merge json file for a complete scatter plot.
         merged_json = self.merge_json_files(output_path, output_path + "FullSet.json")
@@ -297,6 +336,24 @@ class Reports(_Reports):
         file.write(generated_report_string)
         file.close()
 
+        # Prepare summary json data
+        report_data = {
+            "psychomotor_module": {
+                "score": round(self.score_psychomotor_final, 2),
+            },
+            "cognitive_module": {
+                "score": round(self.score_cognitive_final, 2),
+            },
+            "affective_module": {
+                "majority_emotion": self.majority_emotion_final,
+            }
+        }
+
+        # Write to JSON file
+        json_file_path = output_path + "Report.json"
+        with open(json_file_path, 'w') as json_file:
+            json.dump(report_data, json_file, indent=4)
+
         return generated_report_string, self.score_psychomotor_final, self.score_cognitive_final
 
     def deliver_reports(self, generated_reports):
@@ -421,7 +478,7 @@ class Reports(_Reports):
         # Loop through files in the specified folder
         for file_name in sorted(os.listdir(input_folder)):
             # Skip files that contain the string "affective" in their name
-            if file_name.endswith('.json') and 'affective' not in file_name and "FullSet" not in file_name:
+            if file_name.endswith('.json') and 'affective' not in file_name and "FullSet" not in file_name and "Report" not in file_name and "per_movement_score" not in file_name:
                 # Get movement name.
                 movement_name = file_name.split(".")[0].split("-")[1]
 

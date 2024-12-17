@@ -132,7 +132,6 @@ class Response(_Response):
         severe_message = None
         medium_message = None
         code_to_return = None
-        generated_feedback = None
         for message, priority, code in analyzed_movement_errors:
             counts[priority] = counts.get(priority, 0) + 1
             # If max priority, user has to repeat. Store message.
@@ -142,6 +141,9 @@ class Response(_Response):
                     code_to_return = code
                 else:
                     severe_message = message
+                # If user should not repeat, deliver different message.
+                if not repeat:
+                    severe_message = _("wrong_but_not_repeat")
 
             if priority == 2:
                 if code is not None:
@@ -149,6 +151,9 @@ class Response(_Response):
                     code_to_return = code
                 else:
                     medium_message = message
+                # If user should not repeat, deliver different message.
+                if not repeat:
+                    medium_message = _("wrong_but_not_repeat")
 
         num_mild = 0
         num_medium = 0
@@ -162,21 +167,21 @@ class Response(_Response):
 
         # If severe error, repeat for sure.
         text_to_deliver = ""
-        if num_severe > 0 and repeat:
+        if num_severe > 0:
             correct = False
             error_text = random.choice(error_phrases)
             generated_feedback = _("severe-error") + ". " + error_text + ". " + _("repeat-movement") + "."
             # Get the message of severe and deliver.
             if severe_message is not None:
-                text_to_deliver = "Pista: " + severe_message
+                text_to_deliver = severe_message
         # If medium error, repeat only if KLS decides.
-        elif num_medium > 0 and repeat:
+        elif num_medium > 0:
             correct = False
             error_text = random.choice(error_phrases)
             generated_feedback = _("severe-error") + ". " + error_text + ". " + _("repeat-movement") + "."
             # Get the message of severe and deliver.
             if medium_message is not None:
-                text_to_deliver = "Pista: " + medium_message
+                text_to_deliver = medium_message
         # If mild error, do not repeat but store.
         else:
             # If empty, there are no errors.
@@ -189,13 +194,18 @@ class Response(_Response):
                 correct = True
                 error_text = random.choice(error_phrases)
                 if num_mild > 0 and num_medium > 0:
-                    text_to_deliver = (_("commited-mild-medium-errors") % {"num_mild": str(num_mild), "num_medium": str(num_medium)}) + ". " + error_text + ". " + _("lets-continue") + "."
+                    text_to_deliver = (_("commited-mild-medium-errors") % {"num_mild": str(num_mild), "num_medium": str(
+                        num_medium)}) + ". " + error_text + ". " + _("lets-continue") + "."
                 elif num_mild > 0:
-                    text_to_deliver = (_("commited-mild-errors") % {"num_mild": str(num_mild)}) + ". " + error_text + ". " + _("lets-continue") + "."
+                    text_to_deliver = (_("commited-mild-errors") % {
+                        "num_mild": str(num_mild)}) + ". " + error_text + ". " + _("lets-continue") + "."
                 elif num_medium > 0:
-                    text_to_deliver = (_("commited-medium-errors") % {"num_medium": str(num_medium)}) + ". " + error_text + ". " + _("lets-continue") + "."
+                    text_to_deliver = (_("commited-medium-errors") % {
+                        "num_medium": str(num_medium)}) + ". " + error_text + ". " + _("lets-continue") + "."
                 else:
-                    text_to_deliver = (_("commited-errors") % {"num_errors": str(len(analyzed_movement_errors))}) + ". " + error_text + ". " + _("lets-continue") + "."
+                    text_to_deliver = (_("commited-errors") % {
+                        "num_errors": str(len(analyzed_movement_errors))}) + ". " + error_text + ". " + _(
+                        "lets-continue") + "."
                 for error in analyzed_movement_errors:
                     print(error)
 

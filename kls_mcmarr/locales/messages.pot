@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-11-09 12:45-0800\n"
+"POT-Creation-Date: 2024-11-18 16:51-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -565,82 +565,97 @@ msgstr ""
 msgid "affective_main_emotion"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:189
+#: kls_mcmarr/kls/response/response.py:147
+#: kls_mcmarr/kls/response/response.py:157
+msgid "wrong_but_not_repeat"
+msgstr ""
+
+#: kls_mcmarr/kls/response/response.py:174
+#: kls_mcmarr/kls/response/response.py:182
+msgid "severe-error"
+msgstr ""
+
+#: kls_mcmarr/kls/response/response.py:174
+#: kls_mcmarr/kls/response/response.py:182
+msgid "repeat-movement"
+msgstr ""
+
+#: kls_mcmarr/kls/response/response.py:198
 msgid "commited-mild-medium-errors"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:189
-#: kls_mcmarr/kls/response/response.py:191
-#: kls_mcmarr/kls/response/response.py:193
-#: kls_mcmarr/kls/response/response.py:195
+#: kls_mcmarr/kls/response/response.py:199
+#: kls_mcmarr/kls/response/response.py:202
+#: kls_mcmarr/kls/response/response.py:205
+#: kls_mcmarr/kls/response/response.py:208
 msgid "lets-continue"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:191
+#: kls_mcmarr/kls/response/response.py:201
 msgid "commited-mild-errors"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:193
+#: kls_mcmarr/kls/response/response.py:204
 msgid "commited-medium-errors"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:195
+#: kls_mcmarr/kls/response/response.py:207
 msgid "commited-errors"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:211
+#: kls_mcmarr/kls/response/response.py:226
 msgid "b1e1"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:213
+#: kls_mcmarr/kls/response/response.py:228
 msgid "b1e2"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:215
+#: kls_mcmarr/kls/response/response.py:230
 msgid "b1e3"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:217
+#: kls_mcmarr/kls/response/response.py:232
 msgid "b1e4"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:219
+#: kls_mcmarr/kls/response/response.py:234
 msgid "b1e5"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:221
+#: kls_mcmarr/kls/response/response.py:236
 msgid "b2e1"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:223
+#: kls_mcmarr/kls/response/response.py:238
 msgid "b2e2"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:225
+#: kls_mcmarr/kls/response/response.py:240
 msgid "b2e3"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:227
+#: kls_mcmarr/kls/response/response.py:242
 msgid "b3e1"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:229
+#: kls_mcmarr/kls/response/response.py:244
 msgid "b3e2"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:231
+#: kls_mcmarr/kls/response/response.py:246
 msgid "b3e3"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:233
+#: kls_mcmarr/kls/response/response.py:248
 msgid "b4e1"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:235
+#: kls_mcmarr/kls/response/response.py:250
 msgid "b4e2"
 msgstr ""
 
-#: kls_mcmarr/kls/response/response.py:237
+#: kls_mcmarr/kls/response/response.py:252
 msgid "b4e3"
 msgstr ""
 

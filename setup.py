@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='kls_mcmarr',
-    version='1.2.11',
+    version='1.2.14',
     description='Implementation of KLS processing pipeline following MCMARR framework.',
     author='Alberto Casas Ortiz',
     author_email='albertocasasortiz@gmail.com',

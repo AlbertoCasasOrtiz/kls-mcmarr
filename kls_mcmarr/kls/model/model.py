@@ -24,7 +24,7 @@ class Model(_Model):
 
     def model_movement(self, captured_movement, uuid_name=None):
         # Apply low pass filter.
-        filtered_movement = LowPassFilter.apply(captured_movement)
+        # filtered_movement = LowPassFilter.apply(captured_movement)
         filtered_movement = captured_movement
 
         # Remove nans.
@@ -49,7 +49,7 @@ class Model(_Model):
         colormaps = ['viridis', 'plasma', 'cividis', 'magma', 'inferno', 'cool', 'spring', 'summer', 'autumn', 'winter']
 
         # Use a color map for line colors
-        line_colors = plt.cm.get_cmap('tab10', len(landmark_names))
+        line_colors = plt.colormaps['tab10'].resampled(len(landmark_names))
 
         for i, landmark_name in enumerate(landmark_names):
             # Extract x and y coordinates for the current landmark within the interval
@@ -114,7 +114,7 @@ class Model(_Model):
 
         # List of colormaps to assign a unique one for each landmark
         colormaps = ['viridis', 'plasma', 'cividis', 'magma', 'inferno', 'cool', 'spring', 'summer', 'autumn', 'winter']
-        line_colors = plt.cm.get_cmap('tab10', len(landmark_names))
+        line_colors = plt.colormaps['tab10'].resampled(len(landmark_names))
 
         # Go to start frame
         cap.set(cv2.CAP_PROP_POS_FRAMES, interval[0])
@@ -201,7 +201,7 @@ class Model(_Model):
 
         # List of colormaps to assign a unique one for each landmark
         colormaps = ['viridis', 'plasma', 'cividis', 'magma', 'inferno', 'cool', 'spring', 'summer', 'autumn', 'winter']
-        line_colors = plt.cm.get_cmap('tab10', len(landmark_names))
+        line_colors = plt.colormaps['tab10'].resampled(len(landmark_names))
 
         # Loop through the specified frame interval
         for frame_num in range(interval[0], interval[1]):
