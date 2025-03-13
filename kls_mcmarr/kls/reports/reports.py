@@ -21,8 +21,8 @@ class Reports(_Reports):
         self.mp_pose = mp.solutions.pose
 
         # Define max scores
-        self.max_score_psychomotor = 21 + 12 + 15 + 13 + 7
-        self.max_score_per_movement = [21, 12, 15, 13, 7]
+        self.max_score_psychomotor = 19 + 12 + 13 + 11 + 7
+        self.max_score_per_movement = [19, 12, 13, 11, 7]
         self.max_score_cognitive = 5
 
         # Define scores

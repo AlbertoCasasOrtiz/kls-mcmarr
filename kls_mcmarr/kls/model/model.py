@@ -31,7 +31,7 @@ class Model(_Model):
         removed_nans = self.remove_nans(filtered_movement)
 
         if self.generate_plots:
-            self.print_scatter_plot(["RIGHT_WRIST", "RIGHT_ELBOW"], removed_nans, (0, len(captured_movement)-1), uuid_name, False)
+            self.print_scatter_plot(["RIGHT_WRIST"], removed_nans, (0, len(captured_movement)-1), uuid_name, False)
 
         return removed_nans
 

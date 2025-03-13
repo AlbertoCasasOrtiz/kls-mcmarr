@@ -759,7 +759,7 @@ class TestMCMARR(unittest.TestCase):
     def test_metareport(self):
         username = "username"
         metareport = MetaReports()
-        metareport.generate_meta_reports("assets/output/capture/" + "username" + "/")
+        metareport.generate_meta_reports("assets/output/capture/" + username + "/")
 
     @unittest.skip("Too long.")
     def test_generate_report(self):
